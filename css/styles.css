@@ -1,0 +1,60 @@
+body {
+    padding-bottom: 50px;
+}
+
+img {
+  width: 500px;
+  padding-bottom: 20px
+}
+
+img.displayed {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+h1 {
+  text-align: center;
+}
+
+
+input[type=text]:focus {
+      background-color: lightblue;
+  }
+
+.lobsterfont{
+  font-family: 'Lobster', cursive;
+}
+
+
+.jumbotron-text {
+  padding-left: 15px;
+  padding-right: 15px;
+  text-align: center;
+}
+
+.jumbotron {
+  margin-bottom: 0px;
+  background-image: url(../img/vacationpic.jpg);
+  background-position: 0% 25%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+  text-shadow: black 0.3em 0.3em 0.3em;
+}
+
+#thicktext{
+  font-weight: bold;
+  padding-left: 200px;
+  padding-right: 200px;
+}
+
+#footer {
+  color: blue;
+  text-align: center;
+}
+
+#goa, #rio, #todossantos, #preikestolen, #stmoritz, #machupicchu, #thailand {
+  display: none;
+  padding: 25px;
+}
