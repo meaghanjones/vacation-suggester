@@ -50,7 +50,13 @@ $(".name").text(name);
       $('#machupicchu').hide();
       $('#thailand').hide();
     } else if (location==="outdoors" && busyness==="busy" && foodtype==="plain"){
-      $('#machupicchu').toggle();
+      $('#machupicchu').show();
+      $('#thailand').hide());
+      $('#rio').hide();
+      $('#todossantos').hide();
+      $('#goa').hide();
+      $('#preikestolen').hide();
+      $('#stmoritz').hide();
 
     } else if (location==="outdoors" && busyness==="busy" && foodtype==="spicy"){
       $('#thailand').show();
