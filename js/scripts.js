@@ -1,11 +1,12 @@
 $(document).ready(function() {
   $("form#wheretogo").submit(function(event) {
+    debugger;
     var name = $("input#name").val();
     var location = $("select#location").val();
     var busyness = $("select#busyness").val();
     var foodtype = $("select#food").val();
     var timeliness = $("select#time").val();
-    var budget = $("#budget").val();
+    var budget = $("select#budget").val();
 event.preventDefault();
 
 $(".name").text(name);
@@ -33,7 +34,7 @@ $(".name").text(name);
       $('#stmoritz').hide();
       $('#machupicchu').hide();
       $('#thailand').hide();
-    } else if (location==="outdoors" && busyness==="calm" && budget==="1"){
+    } else if (location==="outdoors" && busyness==="calm" && budget==="one"){
       $('#preikestolen').show();
       $('#rio').hide();
       $('#todossantos').hide();
@@ -51,7 +52,7 @@ $(".name").text(name);
       $('#thailand').hide();
     } else if (location==="outdoors" && busyness==="busy" && foodtype==="plain"){
       $('#machupicchu').show();
-      $('#thailand').hide());
+      $('#thailand').hide();
       $('#rio').hide();
       $('#todossantos').hide();
       $('#goa').hide();
