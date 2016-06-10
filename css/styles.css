@@ -22,7 +22,7 @@ input[type=text]:focus {
       background-color: lightblue;
   }
 
-.lobsterfont{
+.locationname{
   font-family: 'Lobster', cursive;
 }
 

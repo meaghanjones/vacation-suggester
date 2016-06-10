@@ -10,8 +10,7 @@ This website allows the user to answer five questions about themselves and be gi
 
 ## Setup/Installation Requirements
 
-* Open document using web browser. [a link](meaghanjones.github.io/vacation-suggester)
-* View page
+* Open document using web browser. [Link to vacation-suggester](https://rawgit.com/meaghanjones/vacation-suggester/master/index.html)
 
 
 ## Known Bugs

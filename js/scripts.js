@@ -7,21 +7,60 @@ $(document).ready(function() {
     var timeliness = $("select#time").val();
     var budget = $("#budget").val();
 event.preventDefault();
+
 $(".name").text(name);
-if (location==="ocean" && busyness==="busy" && foodtype==="plain"){
-  $('#rio').show();
-  } else if (location==="ocean" && busyness==="calm" && foodtype==="spicy"){
-    $('#todossantos').show();
-  } else if (location==="ocean" && busyness==="busy" && foodtype==="spicy"){
-    $('#goa').show();
-  } else if (location==="outdoors" && busyness==="calm" && budget==="1"){
-    $('#preikestolen').show();
-  } else if (location==="outdoors" && busyness==="calm"){
-    $('#stmoritz').show();
-  } else if (location==="outdoors" && busyness==="busy" && foodtype==="plain"){
-    $('#machupicchu').show();
-  } else if (location==="outdoors" && busyness==="busy" && foodtype==="spicy"){
-    $('#thailand').show();
+  if (location==="ocean" && busyness==="busy" && foodtype==="plain"){
+    $('#rio').show();
+    $('#todossantos').hide();
+    $('#goa').hide();
+    $('#preikestolen').hide();
+    $('#stmoritz').hide();
+    $('#machupicchu').hide();
+    $('#thailand').hide();
+    } else if (location==="ocean" && busyness==="calm" && foodtype==="spicy"){
+      $('#todossantos').show();
+      $('#rio').hide();
+      $('#goa').hide();
+      $('#preikestolen').hide();
+      $('#stmoritz').hide();
+      $('#machupicchu').hide();
+      $('#thailand').hide();
+    } else if (location==="ocean" && busyness==="busy" && foodtype==="spicy"){
+      $('#goa').show();
+      $('#rio').hide();
+      $('#todossantos').hide();
+      $('#preikestolen').hide();
+      $('#stmoritz').hide();
+      $('#machupicchu').hide();
+      $('#thailand').hide();
+    } else if (location==="outdoors" && busyness==="calm" && budget==="1"){
+      $('#preikestolen').show();
+      $('#rio').hide();
+      $('#todossantos').hide();
+      $('#goa').hide();
+      $('#stmoritz').hide();
+      $('#machupicchu').hide();
+      $('#thailand').hide();
+    } else if (location==="outdoors" && busyness==="calm"){
+      $('#stmoritz').show();
+      $('#rio').hide();
+      $('#todossantos').hide();
+      $('#goa').hide();
+      $('#preikestolen').hide();
+      $('#machupicchu').hide();
+      $('#thailand').hide();
+    } else if (location==="outdoors" && busyness==="busy" && foodtype==="plain"){
+      $('#machupicchu').toggle();
+
+    } else if (location==="outdoors" && busyness==="busy" && foodtype==="spicy"){
+      $('#thailand').show();
+      $('#rio').hide();
+      $('#todossantos').hide();
+      $('#goa').hide();
+      $('#preikestolen').hide();
+      $('#stmoritz').hide();
+      $('#machupicchu').hide();
+
     }
   });
 });
